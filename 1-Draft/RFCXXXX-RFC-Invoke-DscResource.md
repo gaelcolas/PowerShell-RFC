@@ -58,7 +58,7 @@ Invoke-DscResource [-Name] <string> [-Method] <string> -ModuleName <ModuleSpecif
 We aim at enabling existing scripts using `Invoke-DscResource`, written for Windows PowerShell 5.1, to "just work" in PowerShell 7+, but **in the current user context** when the **PsDscRunAsCredential** DSC common property is **not** supplied.
 
 ```PowerShell
-Invoke-DscResource -Name Script -ModuleName @{ModuleName='PSDscResources';ModuleVersion='2.12.0.0'} -Method 'Set' -Properties @{
+Invoke-DscResource -Name Script -ModuleName @{ModuleName='PSDscResources';ModuleVersion='2.12.0.0'} -Method 'Set' -Property @{
     GetScript  = '<# My Get ScriptBlock #>'
     SetScript  = '<# My Set ScriptBlock #>'
     TestScript = '<# My Test ScriptBlock #>'
