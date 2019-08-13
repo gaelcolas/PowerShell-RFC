@@ -70,7 +70,7 @@ This should run in the current session state where the command is invoked.
 #### PsDscRunAsCredential: throw exception if supplied
 
 After more discussions (with @Jaykul & @TravisEz13) and thinking this through,
-it is not right to build the support for PsDscRunAsCredential in this command
+it is **not** right to build the support for PsDscRunAsCredential in this command
 (more on why later in this RFC).
 
 It's the user's responsibility to wrap the call in the required user context
