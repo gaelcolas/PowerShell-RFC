@@ -119,8 +119,8 @@ It is up to the user to sequence the execution safely, or to create appropriate 
 
 ##### Get
 
-The `GET` function in DSC resources returns a Hashtable, and this will be the same
-for `Invoke-DscResource` in PS7+.
+The `GET` function invoked via the LCM (WMF 5.1) returns a CIM representation of a hashtable,
+and will be a `hashtable` for `Invoke-DscResource` in PS7+.
 
 ##### Test
 
